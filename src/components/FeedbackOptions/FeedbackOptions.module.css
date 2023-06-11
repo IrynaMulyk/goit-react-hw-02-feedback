@@ -1,0 +1,21 @@
+.feedbackOptions {
+    display: 8px 8px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .feedbackBtn {
+    width: 80px;
+    margin: 0 auto;
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #eee3cb;
+    color: #967e76;
+    border: 0;
+    border-radius: 6px;
+    transition: all 200ms;
+  }
+  
+  .feedbackBtn:hover {
+    background-color: #e4d8bc;
+  }

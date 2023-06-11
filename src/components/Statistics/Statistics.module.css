@@ -1,0 +1,16 @@
+.title {
+    margin: 40px auto 20px auto;
+  }
+.statisticsContainer {
+    display: block;
+    margin: 12px 0;
+    width: fit-content;
+    font-size: 18px;
+  }
+  
+  .statistics {
+    margin: 8px 0;
+  }
+  .option {
+    margin-left: 5px;
+  }
