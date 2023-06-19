@@ -1,18 +1,29 @@
-import React  from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-
-const FeedbackOptions = ({onCount}) => 
-    (<div className={css.feedbackOptions}>
-    <button type="button" onClick={onCount} name='good' className={css.feedbackBtn}>Good</button>
-    <button type="button" onClick={onCount} name='neutral' className={css.feedbackBtn}>Neutral</button>
-    <button type="button" onClick={onCount} name='bad' className={css.feedbackBtn}>Bad</button>
-</div>);
+const FeedbackOptions = ({ onCount, options }) => {
+  return (
+    <div className={css.feedbackOptions}>
+      {options.map(option => {
+        return (
+          <button
+            type="button"
+            onClick={onCount}
+            name={option}
+            className={css.feedbackBtn}
+          >
+            {option}
+          </button>
+        );
+      })}
+    </div>
+  );
+};
 
 FeedbackOptions.propTypes = {
-    onCount: PropTypes.func.isRequired,
-  };
+  onCount: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default FeedbackOptions;
-

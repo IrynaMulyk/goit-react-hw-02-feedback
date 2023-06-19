@@ -6,7 +6,7 @@ const Statistics = ({ good, neutral, bad, onCount, countPositiveFeedback }) => {
   return (
     
     <div className={css.statisticsContainer}>
-        <h2 className={css}>Statistics</h2>
+
         <div className={css.statistics}><p >
         Good:<span className={css.option}>{good}</span>
       </p></div>
