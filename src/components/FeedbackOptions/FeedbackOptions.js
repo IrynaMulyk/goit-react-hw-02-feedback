@@ -8,6 +8,7 @@ const FeedbackOptions = ({ onCount, options }) => {
       {options.map(option => {
         return (
           <button
+          key={option}
             type="button"
             onClick={onCount}
             name={option}
